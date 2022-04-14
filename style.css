@@ -34,7 +34,7 @@ header h1 {
 }
 header p {
   margin-top: 20px;
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
   font-size: 0.91em;
   line-height: 1.5;
 }
@@ -48,7 +48,8 @@ button {
   border-radius: 28px;
   border: 0;
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.05em;
+  font-weight: 600;
   color: white;
 }
 button.ios-button {
@@ -68,20 +69,20 @@ button.mac-button:hover {
 
 .keep-track {
   padding: 0 35px;
-  color: var(--dark-grayish-blue);
 }
 .keep-track h2 {
   margin-top: 160px;
+  color: var(--dark-grayish-blue);
 }
 .keep-track p {
   margin-top: 18px;
+  color: var(--grayish-blue);
   font-size: 0.91em;
   line-height: 1.59;
 }
 
 .features {
   padding: 0 30px;
-  color: var(--dark-grayish-blue);
 }
 .features img {
   margin-top: 65px;
@@ -95,25 +96,26 @@ button.mac-button:hover {
 }
 .features h2 {
   margin-top: 48px;
+  color: var(--dark-grayish-blue);
   font-size: 1.32em;
 }
 .features p {
   margin-top: 10px;
+  color: var(--grayish-blue);
   font-size: 0.9em;
   line-height: 1.6;
 }
 
-.access-anywhere {
-  color: var(--dark-grayish-blue);
-}
 .access-anywhere h2 {
   padding: 0 30px;
   margin-top: 185px;
+  color: var(--dark-grayish-blue);
   line-height: 1.4;
 }
 .access-anywhere p {
   padding: 0 30px;
   margin-top: 15px;
+  color: var(--grayish-blue);
   font-size: 0.91em;
   line-height: 1.5;
 }
@@ -126,13 +128,14 @@ button.mac-button:hover {
 
 .supercharge-workflow {
   padding: 0 40px;
-  color: var(--dark-grayish-blue);
 }
 .supercharge-workflow h2 {
   margin-top: 95px;
+  color: var(--dark-grayish-blue);
 }
 .supercharge-workflow p {
   margin-top: 12px;
+  color: var(--grayish-blue);
   font-size: 0.9em;
   line-height: 1.5;
 }
@@ -140,12 +143,13 @@ button.mac-button:hover {
 .tools {
   margin-top: 35px;
   padding: 0 30px;
-  color: var(--dark-grayish-blue);
 }
 .tools h3 {
+  color: var(--dark-grayish-blue);
   font-size: 1.3em;
 }
 .tools p {
+  color: var(--grayish-blue);
   font-size: 0.9em;
   line-height: 1.55;
 }
@@ -222,13 +226,13 @@ button.mac-button:hover {
 }
 .call-to-action p {
   margin-top: 17px;
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
   font-size: 0.9em;
   line-height: 1.58;
 }
 
 main footer {
-  padding: 50px 0 30px;
+  padding: 50px 0 32px;
   background-color: hsl(220, 18%, 97%);
 }
 footer .logo img {
@@ -236,20 +240,18 @@ footer .logo img {
   height: 57px;
   margin-bottom: 13px;
 }
-footer li {
+main footer a {
+  display: inline-block;
   margin-top: 27px;
-  list-style-type: none;
-}
-footer li a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
 }
-footer li a:hover {
+main footer a:hover {
   color: var(--strong-cyan);
 }
 
 footer .icon {
-  margin: 45px auto 0;
+  margin: 20px auto 0;
   width: 154px;
 }
 footer .flex-container {
@@ -279,6 +281,7 @@ footer .icon a svg:hover {
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: hsl(220, 18%, 97%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -468,7 +471,7 @@ footer .icon a svg:hover {
   }
 
   main footer {
-    height: 150px;
+    height: 136px;
     padding: 44px 165px 0;
     display: flex;
     justify-content: space-between;
@@ -476,18 +479,21 @@ footer .icon a svg:hover {
   footer .left-content {
     display: flex;
   }
-  footer ul {
+  footer .cta-list {
     text-align: left;
     margin-left: 132px;
     display: flex;
   }
-  footer .flex-wrapper {
+  footer .flex-wrapper:first-child {
     margin-right: 97px;
   }
-  footer .flex-wrapper li:last-child {
-    margin-top: 19px;
+  footer .flex-wrapper {
+    margin-right: 74px;
   }
-  footer li {
+  footer .flex-wrapper a:last-child {
+    margin-top: 18px;
+  }
+  main footer a {
     margin-top: 0;
   }
 
